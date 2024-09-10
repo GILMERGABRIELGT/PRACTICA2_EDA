@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDA</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <div class="container">
+        <h2>Calculadora de operaciones recursivas</h2>
+        <label for="Calculo">Selecciona la operación (ingresa solamente números):</label>
+        <select id="Calculo" onchange="mostrarCampos()">
+            <option value="factorial">Factorial</option>
+            <option value="fibonacci">Fibonacci</option>
+            <option value="MCD">MCD</option>
+        </select>
+        <div id="input-fields" class="form-group"></div>
+        
+        <button onclick="calcular()">Calcular</button>
+        
+        <div id="resultado" class="result"></div>
+    </div>
+
+    <script src="operaciones recursivas/factorial.js" ></script>
+    <script src="operaciones recursivas/fibonacci.js" ></script>
+    <script src="operaciones recursivas/mcd.js" ></script>
+    <script src="script.js" ></script>
+</body>
+</html>
+
